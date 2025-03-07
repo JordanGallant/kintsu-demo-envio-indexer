@@ -1,0 +1,106 @@
+type StakedMonad_Approval {
+  id: ID!
+  owner: String!
+  spender: String!
+  value: BigInt!
+}
+
+type StakedMonad_Compounded {
+  id: ID!
+  amount: BigInt!
+}
+
+type StakedMonad_EIP712DomainChanged {
+  id: ID!
+}
+
+type StakedMonad_FeesAdjusted {
+  id: ID!
+  newFee: BigInt!
+}
+
+type StakedMonad_FeesWithdrawn {
+  id: ID!
+  shares: BigInt!
+}
+
+type StakedMonad_NodeAdded {
+  id: ID!
+  nodeId: String!
+  index: BigInt!
+}
+
+type StakedMonad_NodeRemoved {
+  id: ID!
+  nodeId: String!
+}
+
+type StakedMonad_NodeUpdated {
+  id: ID!
+  nodeId: String!
+  oldWeight: BigInt!
+  newWeight: BigInt!
+}
+
+type StakedMonad_RoleAdminChanged {
+  id: ID!
+  role: String!
+  previousAdminRole: String!
+  newAdminRole: String!
+}
+
+type StakedMonad_RoleGranted {
+  id: ID!
+  role: String!
+  account: String!
+  sender: String!
+}
+
+type StakedMonad_RoleRevoked {
+  id: ID!
+  role: String!
+  account: String!
+  sender: String!
+}
+
+type StakedMonad_Staked {
+  id: ID!
+  staker: String!
+  amount: BigInt!
+  newShares: BigInt!
+}
+
+type StakedMonad_Transfer {
+  id: ID!
+  from: String!
+  to: String!
+  value: BigInt!
+}
+
+type StakedMonad_UnlockCancelled {
+  id: ID!
+  staker: String!
+  unlockId: BigInt!
+}
+
+type StakedMonad_UnlockRedeemed {
+  id: ID!
+  staker: String!
+  unlockId: BigInt!
+  amount: BigInt!
+}
+
+type StakedMonad_UnlockRequested {
+  id: ID!
+  staker: String!
+  unlockId: BigInt!
+  shares: BigInt!
+}
+
+type StakedMonad_UnlockSent {
+  id: ID!
+  batchId: BigInt!
+  shares: BigInt!
+  spotValue: BigInt!
+}
+
