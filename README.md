@@ -17,3 +17,16 @@ pnpm envio dev
 ## Example queries
 
 Visit http://localhost:8080 to see the GraphQL Playground, local password is `testing`.
+
+
+### Transfer Events
+
+```graphql
+query MyQuery {
+  StakedMonad_Transfer {
+    from
+    to
+    value
+  }
+}
+```
