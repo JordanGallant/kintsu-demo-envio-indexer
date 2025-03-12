@@ -32,7 +32,7 @@ StakedMonad.Approval.handler(async ({ event, context }) => {
 
   context.StakedMonad_Approval.set(entity);
 });
-
+//
 StakedMonad.Compounded.handler(async ({ event, context }) => {
   const entity: StakedMonad_Compounded = {
     id: `${event.chainId}_${event.block.number}_${event.logIndex}`,
